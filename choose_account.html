@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Account</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .accounts {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .account {
+            margin: 20px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .account img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .account img:hover {
+            transform: scale(1.05);
+        }
+
+        .account p {
+            font-size: 1.2rem;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="accounts">
+        <div class="account" onclick="selectAccount('login.html')">
+            <img src="account1.jpg" alt="Account 1">
+            <p>Account 1</p>
+        </div>
+        <div class="account" onclick="selectAccount('login.html')">
+            <img src="account2.jpg" alt="Account 2">
+            <p>Account 2</p>
+        </div>
+        <!-- Add more account options as needed -->
+    </div>
+
+    <script>
+        function selectAccount(htmlPage) {
+            // Redirect to the selected HTML page
+            window.location.href = htmlPage + '.html';
+        }
+    </script>
+</body>
+</html>
