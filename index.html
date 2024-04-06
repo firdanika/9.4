@@ -1,46 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
-    
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Special Page</title>
+    <title>My Netflix-like Website</title>
     <style>
+        /* Resetting default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
         body {
-            background-color: #ffe6f2; /* Light pink background */
-            color: #800080; /* Dark purple text color */
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        /* Header styles */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #111;
+        }
+
+        .logo h1 {
+            font-size: 1.8rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Main styles */
+        main {
+            padding: 20px;
+        }
+
+        /* Hero section styles */
+        .hero {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .hero button {
+            background-color: #e50914;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .hero button:hover {
+            background-color: #ff0000;
+        }
+
+        /* Categories section styles */
+        .categories {
+            margin-bottom: 40px;
+        }
+
+        .category {
+            margin-bottom: 20px;
+        }
+
+        .category h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        /* Featured section styles */
+        .featured {
+            /* Add styles as needed */
+        }
+
+        /* Footer styles */
+        footer {
             text-align: center;
             padding: 20px;
-            font-family: 'Arial', sans-serif;
+            background-color: #111;
         }
 
-        h1 {
-            color: #ff33cc; /* Pink heading color */
-        }
-
-        img {
-            border-radius: 50%; /* Make the image round */
-            margin-top: 20px;
-            max-width: 80%; /* Make the image 80% of the viewport width */
-        }
-
-        p {
-            font-size: 16px; /* Slightly smaller font size for better readability on mobile */
-            margin-top: 20px;
-            line-height: 1.5; /* Improved line height for better readability */
+        footer p {
+            font-size: 0.8rem;
         }
     </style>
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <h1>Netflix</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h1>My Perfect Girlfriend</h1>
+    <main>
+        <section class="hero">
+            <h2>Welcome to Netflix</h2>
+            <p>Watch anywhere. Cancel anytime.</p>
+            <button>Start Watching</button>
+        </section>
 
-    <!-- Replace "image.jpg" with the path to your girlfriend's image in the repository -->
-    <img src="image1.jpg" alt="Your Perfect Girlfriend">
+        <section class="categories">
+            <h2>Popular Categories</h2>
+            <div class="category">
+                <h3>Action</h3>
+                <!-- Thumbnails of action movies -->
+            </div>
+            <div class="category">
+                <h3>Drama</h3>
+                <!-- Thumbnails of drama movies -->
+            </div>
+            <!-- Add more categories as needed -->
+        </section>
 
-    <p>You are the perfect girlfriend in every way imaginable. Your kindness and warmth light up even the darkest days, and your unwavering support means the world to me. Your sense of humor brings joy to every moment we share, and your laughter is my favorite melody. Thank you!</p>
-    <p>Your beauty, both inside and out, never ceases to amaze me. Your intelligence, passion, and determination inspire me to be a better person every day. I cherish the moments we spend together, whether it's exploring new places, having deep conversations, or simply enjoying each other's company in comfortable silence. Thank you!</p>
-    <p>You make love feel easy and natural, and being with you is like finding a missing piece of my heart. I feel complete and fulfilled in ways I never thought possible. You are my confidante, my partner in crime, and my greatest support system. Thank you!</p>
-    <p>Thank you for being you, for being by my side, and for making every day brighter. I feel incredibly fortunate to have you as my girlfriend, and I look forward to creating countless more beautiful memories together. Thank you!</p>
+        <section class="featured">
+            <h2>Featured</h2>
+            <!-- Featured movies or TV shows -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Netflix-like Website</p>
+    </footer>
 </body>
 </html>
