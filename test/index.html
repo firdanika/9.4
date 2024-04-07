@@ -37,8 +37,8 @@
   </style>
 </head>
 <body>
-<audio autoplay loop>
-  <source src="test/Eyes.mp3" type="audio/mp3">
+<audio id="background-music">
+  <source src="Eyes.mp3" type="audio/mp3">
   Your browser does not support the audio element.
 </audio>
 
@@ -48,6 +48,13 @@
   <p>
     Today is the day we celebrate your birthday, my love. I feel so thankful for having you in my life. You make me feel incredibly lucky just by being yourself. Finding someone as wonderful as you, who understands me so well and brings so much happiness and security, is truly amazing. Even though we're far apart in this long-distance relationship, I never feel distant from you. Being with you has helped me learn more about myself. I tend to think too much, and you worry about getting too attached. But what's truly special is how you understand me. You know what makes me happy and what worries me. I really appreciate how you keep me involved and show your affection, even if it's a bit overwhelming sometimes (but in a cute way!). And I love how you reassure me with your words whenever I'm overthinking things. I hope I can give you the same comfort without adding to your worries about attachment. I hope our relationship continues to grow stronger until we're old and married. If we ever have disagreements, I hope we can resolve them quickly. And if I do something that upsets you, please let me know. I can't wait to do lots of fun things together.  </p>
 </div>
+
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    var audio = document.getElementById('background-music');
+    audio.play();
+  });
+</script>
 
 </body>
 </html>
