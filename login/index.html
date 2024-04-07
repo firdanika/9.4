@@ -68,6 +68,32 @@
             margin-bottom: 20px;
         }
 
+        hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .hero-left {
+            flex: 1;
+        }
+        .hero-right {
+            flex: 1;
+            text-align: right;
+        }
+        .hero-right img {
+            max-width: 100%;
+            height: auto;
+        }
+        @media screen and (max-width: 600px) {
+            .hero {
+                flex-direction: column;
+                align-items: center;
+            }
+            .hero-left, .hero-right {
+                text-align: center;
+            }
+        }
+        
         .hero button {
             background-color: #e50914;
             color: #fff;
@@ -113,7 +139,9 @@
         .featured {
             /* Add styles as needed */
         }
-
+        .green-text {
+            color: green;
+        }
         /* Footer styles */
         footer {
             text-align: center;
@@ -143,12 +171,18 @@
 
     <main>
         <section class="hero">
-            <h2>Welcome to Netflix</h2>
-            <p>Watch anywhere. Cancel anytime.</p>
-                <div class="thumbnails2">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/1200px-Cat_August_2010-4.jpg" alt="Netflix Image">
-                </div>
-            <button onclick="window.location.href='https://github.com/your_username/your_repository/your_video.mp4'">Start Watching</button>
+            <div class="hero-left">
+                <h2>Welcome to Netflix</h2>
+                <p>Our story</p>
+                <p class="green-text">100% match together 2023 forever</p>
+                <p>adsasfdahfkjhakjgfhakjfhfah</p>
+                <p>lkfjalkjflkasjdhajkdkjagsdjkgaskdjgasjkgd</p>
+                <p>lfkjlaskjflsahdlkhaslkda</p>
+            </div>
+            <div class="hero-right">
+                <img src="your_image_url_here.jpg" alt="Netflix Image">
+                <button onclick="window.location.href='https://github.com/your_username/your_repository/your_video.mp4'">Start Watching</button>
+            </div>
         </section>
 
         <section class="categories">
