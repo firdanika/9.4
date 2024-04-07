@@ -101,11 +101,19 @@
             margin-bottom: 20px;
         }
 
-        .thumbnails img {
-        max-width: 250px; /* Adjust the maximum width as needed */
-        max-height: 200px; /* Adjust the maximum height as needed */
-        object-fit: cover;
+        .thumbnails {
+          width: 250px; /* Fixed width */
+          height: 200px; /* Fixed height */
+          overflow: hidden; /* Hide overflowing content */
+          position: relative; /* Enable positioning of the child image */
         }
+        .thumbnails img {
+          position: absolute; /* Position the image relative to its container */
+          top: 50%; /* Move the image vertically halfway down the container */
+          left: 50%; /* Move the image horizontally halfway across the container */
+          transform: translate(-50%, -50%); /* Center the image within the container */
+        }
+        
 
         .category h3 {
             font-size: 1.5rem;
